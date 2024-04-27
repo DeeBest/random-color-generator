@@ -4,7 +4,7 @@ footerParagraph.textContent = `Created by \xA9Simphiwe ${currentDate}.`;
 
 const container = document.getElementById('container');
 
-for (let index = 0; index < 15; index++) {
+for (let index = 0; index < 10; index++) {
   const colorContainer = document.createElement('div');
   colorContainer.classList.add('color-container');
   container.appendChild(colorContainer);
@@ -34,3 +34,6 @@ function randomColor() {
   }
   return colorCode;
 }
+
+const button = document.getElementById('btn');
+button.addEventListener('click', generateColors);
